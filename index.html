@@ -355,35 +355,23 @@
     <div class="section-title">
       <h2>Projects</h2>
     </div>
-    <!-- Image Slider Section -->
-    <section id="image-slider">
-      <div class="container">
-        <div class="section-title">
-          <h2>Image Slider</h2>
-        </div>
-        <div class="image-container">
-          <div class="before-image">
-            <img src="assets/img/before-image.jpg" alt="Before" />
-          </div>
-          <div class="after-image">
-            <img src="assets/img/after-image.jpg" alt="After" />
-          </div>
-        </div>
-        <input type="range" class="slider" id="slider" />
-      </div>
-    </section>
 
-    <!-- JavaScript for image slider -->
-    <script>
-      const slider = document.getElementById("slider");
-      const beforeImage = document.querySelector(".before-image");
-      const afterImage = document.querySelector(".after-image");
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/index.js"
+></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/styles.css"
+/>
 
-      slider.addEventListener("input", () => {
-        beforeImage.style.width = slider.value + "%";
-        afterImage.style.width = 100 - slider.value + "%";
-      });
-    </script>
+<img-comparison-slider hover="hover">
+  <img slot="first" src="assets/img/before-image.jpg" />
+  <img slot="second" src="assets/img/after-image.jpg" />
+</img-comparison-slider>
+
+
+
 
   </div>
 </section>
