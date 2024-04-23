@@ -344,52 +344,57 @@
 
 
 
+
+  
+
   <!-- ======= Start Projects Section ======= -->
 
-  <section id="projects" class="services">
-    <div class="container">
-      <div class="section-title">
-        <h2>Projects</h2>
-      </div>
-      <div class="row">
-        <div class="col-lg-12" data-aos="fade-up" style="display:inline-block;">
-          <div class="col-md-4 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding:0px 0px;padding-bottom:5px;display:inline-block;">
-            <a href="GITHUBLink" target="_blank" rel="noreferrer"><img style="padding:5px 5px;" src="assets/img/portfolio/project1.jpg" class="img-fluid" width="300" height="300"></a>
-            <a href="GITHUBLink" target="_blank" rel="noreferrer"><h5 style="padding:5px 5px;color:#ffffff"><strong>Wildfire Severity TFM NOMBRE PROYECTO 1</strong></h5></a>
-            <p style="padding:0px 2px;color:#fff;">DESCRIPCION PROYECTO 1.</p>
-          </div>
-          
-          <div class="col-md-4 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding:0px 0px;padding-bottom:5px;display:inline-block;">
-            <a href="GITHUBLink" target="_blank" rel="noreferrer"><img style="padding:5px 5px;" src="assets/img/portfolio/project2.jpg" class="img-fluid" width="324" height="324"></a>
-            <a href="GITHUBLink" target="_blank" rel="noreferrer"><h5 style="padding:5px 5px;color:#ffffff"><strong>LiDAR Classification NOMBRE PROYECTO 2</strong></h5></a>
-            <p style="padding:0px 2px;color:#fff;">DESCRIPCION PROYECTO 2.</p>
-          </div>
-          
-          <div class="col-md-4 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding:0px 0px;padding-bottom:5px;display:inline-block;">
-            <a href="GITHUBLink" target="_blank" rel="noreferrer"><img style="padding:5px 5px;" src="assets/img/portfolio/project3.jpg" class="img-fluid" width="300" height="300"></a>
-            <a href="GITHUBLink" target="_blank" rel="noreferrer"><h5 style="padding:5px 5px;color:#ffffff"><strong>LiDAR-RGB Projection NOMBRE PROYECTO 3</strong></h5></a>
-            <p style="padding:0px 2px;color:#fff;">DESCRIPCION PROYECTO 3.</p>
-          </div>
-          <div class="col-md-4 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding:0px 0px;padding-bottom:5px;display:inline-block;">
-            <a href="GITHUBLink" target="_blank" rel="noreferrer"><img style="padding:5px 5px;" src="assets/img/portfolio/project1.jpg" class="img-fluid" width="300" height="300"></a>
-            <a href="GITHUBLink" target="_blank" rel="noreferrer"><h5 style="padding:5px 5px;color:#ffffff"><strong>ALGO CON LEAFLET</strong></h5></a>
-            <p style="padding:0px 2px;color:#fff;">DESCRIPCION PROYECTO 1.</p>
-          </div>
-          
-          <div class="col-md-4 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding:0px 0px;padding-bottom:5px;display:inline-block;">
-            <a href="GITHUBLink" target="_blank" rel="noreferrer"><img style="padding:5px 5px;" src="assets/img/portfolio/project1.jpg" class="img-fluid" width="300" height="300"></a>
-            <a href="GITHUBLink" target="_blank" rel="noreferrer"><h5 style="padding:5px 5px;color:#ffffff"><strong>ALGO IMAGENES SATELLITE EN JUPYTER NOTEBOOK</strong></h5></a>
-            <p style="padding:0px 2px;color:#fff;">DESCRIPCION PROYECTO 1.</p>
-          </div>
-          
-        </div>
-      </div>
+  
+<section id="projects" class="services">
+  <div class="container">
+    <div class="section-title">
+      <h2>Projects</h2>
     </div>
-  </section>
+    <!-- Image Slider Section -->
+    <section id="image-slider">
+      <div class="container">
+        <div class="section-title">
+          <h2>Image Slider</h2>
+        </div>
+        <div class="image-container">
+          <div class="before-image">
+            <img src="assets/img/before-image.jpg" alt="Before" />
+          </div>
+          <div class="after-image">
+            <img src="assets/img/after-image.jpg" alt="After" />
+          </div>
+        </div>
+        <input type="range" class="slider" id="slider" />
+      </div>
+    </section>
+
+    <!-- JavaScript for image slider -->
+    <script>
+      const slider = document.getElementById("slider");
+      const beforeImage = document.querySelector(".before-image");
+      const afterImage = document.querySelector(".after-image");
+
+      slider.addEventListener("input", () => {
+        beforeImage.style.width = slider.value + "%";
+        afterImage.style.width = 100 - slider.value + "%";
+      });
+    </script>
+
+  </div>
+</section>
+
 
   <!-- ======= End Projects Section ======= -->
 
 
+
+
+  
 
   <!-- ======= Start Skills Section ======= -->
 
